@@ -1,7 +1,23 @@
 
 <article id="post">
-  <h1><%=page.title%></h1>
-  <%-page.content%>
+  <header class="post-header">
+    <div id="site-info">
+      <div class="post-date-left">
+        <%=page.date%>
+      </div>
+      <div class="site-title-area">
+        <div class="site-title"><%=config.title%></div>
+        <div class="site-subtitle"><%=config.subtitle%></div>
+      </div>
+      <div class="post-date-right">
+        <%=page.date%>
+      </div>
+    </div>
+    <h1><%=page.title%></h1>
+  </header>
+  <div class="post-body">
+    <%-page.content%>
+  </div>
 </article>
 
 <div id="paginator">
