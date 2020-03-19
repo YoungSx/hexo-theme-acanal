@@ -11,8 +11,8 @@ menu:
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/mytheme.css
+- /css/acanal.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/mytheme.js
+- /js/acanal.js
