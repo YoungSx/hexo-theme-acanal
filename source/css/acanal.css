@@ -27,7 +27,7 @@ body {
   color: #000;
   text-decoration: none;
   padding: 0px 10px;
-  transition: background-color ease   0.8s;
+  transition: background-color ease 0.8s;
 }
 
 #menu-inner a:hover {
@@ -80,4 +80,8 @@ body {
 
 #bottom-outer {
   padding: 40px 40px 10px 40px;
+}
+
+#bottom-outer #site-info {
+  border-bottom: 1px solid #000;
 }
