@@ -8,7 +8,7 @@ body {
   padding: 10px 40px 40px 40px;
 }
 
-#menu-outer, #post, #bottom-outer, #fake-bottom-outer{
+#menu-outer, #content-outer, #bottom-outer, #fake-bottom-outer{
   max-width: 1000px;
   margin: 0 auto;
   background-color: #FFF;
@@ -34,7 +34,7 @@ body {
   background-color: #F0F0F0;
 }
 
-#post {
+#content-outer {
   padding: 40px;
   margin: 8px auto;
 }
