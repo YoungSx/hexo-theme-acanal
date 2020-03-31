@@ -49,7 +49,7 @@ body {
   padding-bottom: 30px;
 }
 
-#site-info {
+#site-info, #footer-info {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -82,6 +82,6 @@ body {
   padding: 40px 40px 10px 40px;
 }
 
-#bottom-outer #site-info {
+#bottom-outer #footer-info {
   border-bottom: 1px solid #000;
 }
