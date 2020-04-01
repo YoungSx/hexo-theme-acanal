@@ -74,9 +74,11 @@ body {
   text-align: right;
 }
 
-.post-body {
-  column-count: 2;
-  column-gap: 2em;
+@media (min-width: 767px) {
+  .post-body {
+    column-count: 2;
+    column-gap: 2em;
+  }
 }
 
 #bottom-outer {
