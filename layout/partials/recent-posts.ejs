@@ -1,6 +1,22 @@
 
 <% if (page.posts.length > 0) { %>
   <div id="recent-posts">
+    <div id="site-info">
+      <div class="post-date-left">
+        <%if(page.date){%>
+        <%=page.date%>
+        <%}%>
+      </div>
+      <div class="site-title-area">
+        <div class="site-title"><%=config.title%></div>
+        <div class="site-subtitle"><%=config.subtitle%></div>
+      </div>
+      <div class="post-date-right">
+        <%if(page.date){%>
+        <%=page.date%>
+        <%}%>
+      </div>
+    </div>
     <h1>Recent Posts</h1>
     <% page.posts.sort('date', -1).limit(10).each(post => { %>
       <div class="recent-post-item">
