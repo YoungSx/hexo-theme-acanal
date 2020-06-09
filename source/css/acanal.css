@@ -44,7 +44,7 @@ body {
   font-weight: normal；
 }
 
-#post h1 {
+h1 {
   font-size: 2em;
   text-align: center;
   padding-bottom: 30px;
@@ -72,6 +72,24 @@ body {
 .post-date-right {
   flex: 1;
   text-align: right;
+}
+
+.tag-list {
+}
+
+.tag-list-item {
+  display: block;
+  float: left;
+  margin: 5px;
+}
+
+aside {
+  clear: both;
+}
+
+aside a {
+  text-decoration: none;
+  color: #4B4B4B;
 }
 
 @media (min-width: 767px) {
