@@ -17,3 +17,15 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/acanal.js
+
+# Valine
+valine:
+  enable: true # true
+  el: 'vcomments'
+  appId: b47PMHdzebB0ozGGdW68aQAN-gzGzoHsz
+  appKey: pnCuygqUh5uDjQt8wNEKSd8K
+  notify: false
+  verify: false
+  avatar: 'mp'
+  pageSize: '10'
+  placeholder: '请输入...' 

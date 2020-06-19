@@ -60,6 +60,9 @@ pageTitle += ' [ ' + config.title + ' ]';
         <%}%>
       </div>
     </div>
+    <% if (is_post()) { %>
+      <%- partial('partials/valine') %>
+    <%} %>
   </div>
 </div>
 
