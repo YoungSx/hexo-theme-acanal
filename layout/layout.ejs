@@ -62,7 +62,13 @@ pageTitle += ' [ ' + config.title + ' ]';
     </div>
     <% if (is_post()) { %>
       <%- partial('partials/valine') %>
-    <%} %>
+      <% if (theme.valine.visitor) { %>
+        <span id="<%- url_for(page.path) %>" class="leancloud-visitors view" data-flag-title="<%page.title%>">
+          <em class="post-meta-item-text">阅读量 </em>
+          <i class="leancloud-visitors-count">不知道 &gt;_&lt;</i>
+        </span>
+      <%}%>
+    <%}%>
   </div>
 </div>
 

@@ -29,3 +29,4 @@ valine:
   avatar: 'mp'
   pageSize: '10'
   placeholder: '请输入...' 
+  visitor: true
