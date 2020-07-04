@@ -23,5 +23,6 @@ git pull
 
 ## TODO
 
-- [ ] Valine
+- [x] Valine
 - [ ] catelog
+- [x] visitor statistics
