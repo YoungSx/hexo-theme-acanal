@@ -7,22 +7,7 @@ const archivesList = list_archives({ show_count: false });
 
 <% if (is_year() === false) { %>
   <div id="archive">
-    <div id="site-info">
-      <div class="post-date-left">
-        <%if(page.date){%>
-          <%=page.date%>
-        <%}%>
-      </div>
-      <div class="site-title-area">
-        <div class="site-title"><%=config.title%></div>
-        <div class="site-subtitle"><%=config.subtitle%></div>
-      </div>
-      <div class="post-date-right">
-        <%if(page.date){%>
-          <%=page.date%>
-        <%}%>
-      </div>
-    </div>
+    <%-partial('partials/header')%>
     <h1>Archives</h1>
 
     <% if (theme.atom !== undefined) { %>
