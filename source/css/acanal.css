@@ -110,3 +110,38 @@ aside a {
 #bottom-outer #footer-info {
   border-bottom: 1px solid #000;
 }
+
+.recent-post-item {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 0.1rem solid black;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,sans-serif;
+  font-size: 18px;
+}
+
+.recent-post-item a {
+  color: #333;
+  outline: 0;
+  text-decoration: none;
+}
+
+.recent-post-item a:hover {
+  text-decoration: underline;
+}
+
+.recent-post-item-time {
+  text-align: right;
+}
+
+#paginator {
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#paginator span, #paginator a {
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
