@@ -1,9 +1,6 @@
 body {
   margin: 0;
   background-color: #E6E6E6;
-  animation: fade-in;
-  animation-duration: 1.5s;
-  -webkit-animation:fade-in 1.5s;
 }
 
 @keyframes fade-in {
@@ -12,11 +9,35 @@ body {
   100% {opacity: 1;}
 }
 
-#menu-outer {
-  padding: 10px 40px 40px 40px;
+@keyframes float-up {
+  0% {
+    opacity: 0;
+    padding-top: 50px;
+  }
+  40% {
+    opacity: 0;
+    padding-top: 40px;
+  }
+  100% {
+    opacity: 1;
+    padding-top: 10px;
+  }
 }
 
-#menu-outer, #content-outer, #bottom-outer, #fake-bottom-outer{
+#menu-outer {
+  padding: 10px 40px 40px 40px;
+  animation: float-up;
+  animation-duration: 1.5s;
+  -webkit-animation: float-up 1.5s;
+}
+
+#content-outer, #bottom-outer, #fake-bottom-outer {
+  animation: fade-in;
+  animation-duration: 1.5s;
+  -webkit-animation:fade-in 1.5s;
+}
+
+#menu-outer, #content-outer, #bottom-outer, #fake-bottom-outer {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #FFF;
