@@ -4,9 +4,18 @@ body {
 }
 
 @keyframes fade-in {
-  0% {opacity: 0;}
-  40% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  40% {
+    opacity: 0;
+    margin-top: 40px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 8px;
+  }
 }
 
 @keyframes float-up {
