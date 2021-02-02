@@ -20,10 +20,10 @@ scripts:
 
 # Valine
 valine:
-  enable: true # true
+  enable: false # true
   el: 'vcomments'
-  appId: b47PMHdzebB0ozGGdW68aQAN-gzGzoHsz
-  appKey: pnCuygqUh5uDjQt8wNEKSd8K
+  appId: 
+  appKey: 
   notify: false
   verify: false
   avatar: 'mp'
