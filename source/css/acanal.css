@@ -78,6 +78,12 @@ body {
   margin: 8px auto;
 }
 
+.post-body {
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+}
+
 #post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
   font-weight: normal；
 }
