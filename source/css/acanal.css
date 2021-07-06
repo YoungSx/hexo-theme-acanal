@@ -134,7 +134,7 @@ aside a {
   color: #4B4B4B;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1000px) {
   .post-body {
     column-count: 2;
     column-gap: 2em;
