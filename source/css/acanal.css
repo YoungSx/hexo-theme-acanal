@@ -82,7 +82,7 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
@@ -102,6 +102,10 @@ h1 {
   font-size: 2em;
   text-align: center;
   padding-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
 }
 
 #site-info, #footer-info {

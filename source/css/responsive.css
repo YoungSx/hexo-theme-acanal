@@ -1,33 +1,3 @@
-h1 {
-	font-size: 1.9em;
-	font-weight: 600;
-	line-height: 1.05
-}
-
-h2 {
-	font-size: 1.7em;
-	font-weight: 500;
-	line-height: 1.2;
-	margin-top: 32px;
-	margin-bottom: 16px
-}
-
-h3 {
-	font-size: 1.375em;
-	font-weight: 500;
-	line-height: 1.3;
-	margin-top: 32px;
-	margin-bottom: 16px
-}
-
-h4, h5, h6, aside h2, aside h3 {
-	font-size: 1.2em;
-	font-weight: 500;
-	line-height: 1.625;
-	margin-top: 32px;
-	margin-bottom: 8px
-}
-
 @media (max-width:980px) {
 	body {
 		margin: 0 20px;
@@ -47,6 +17,14 @@ h4, h5, h6, aside h2, aside h3 {
 
 	h2 {
 		font-size: 1.6em
+	}
+
+	h3 {
+		font-size: 1.375em;
+	}
+
+	h4, h5, h6, aside h2, aside h3 {
+		font-size: 1.2em
 	}
 
 	.post-body {
@@ -80,33 +58,32 @@ h4, h5, h6, aside h2, aside h3 {
     }
 
 	h1 {
-		font-size: 1.4em
+		font-size: 1.7em
 	}
 
 	h2 {
-		font-size: 1.2em
+		font-size: 1.5em
+	}
+
+	h3 {
+		font-size: 1.275em;
+	}
+
+	h4, h5, h6, aside h2, aside h3 {
+		font-size: 1.1em
+	}
+
+	.post-body {
+		font-size: 1em;
 	}
 }
 
 @media (min-width:981px) {
-    #menu-inner a {
-        font-size: 1.6em;
-    }
-
 	.post-body {
 		column-count: 2;
 		column-gap: 2em;
 	}
-}
 
-@media (min-width:1024px) {
-
-    #menu-inner a {
-        font-size: 1.2em;
-    }
-}
-
-@media (min-width:1080px) {
 	h1 {
 		font-size: 1.8em
 	}
@@ -114,14 +91,38 @@ h4, h5, h6, aside h2, aside h3 {
 	h2 {
 		font-size: 1.6em
 	}
+
+	h3 {
+		font-size: 1.375em
+	}
+
+	h4, h5, h6, aside h2, aside h3 {
+		font-size: 1.2em
+	}
 }
 
-@media (min-width:1200px) {
+@media (min-width:1500px) {
+    #menu-inner a {
+        font-size: 1.2em;
+    }
+
+	.post-body {
+		font-size: 1.1em;
+	}
+
 	h1 {
-		font-size: 2em
+		font-size: 1.9em
 	}
 
 	h2 {
-		font-size: 1.8em
+		font-size: 1.7em
+	}
+
+	h3 {
+		font-size: 1.475em
+	}
+	
+	h4, h5, h6, aside h2, aside h3 {
+		font-size: 1.3em
 	}
 }
