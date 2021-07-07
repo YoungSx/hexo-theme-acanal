@@ -12,6 +12,7 @@ menu:
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/acanal.css
+- /css/responsive.css
 - /css/highlight.css
 
 # scripts loaded in the end of the body

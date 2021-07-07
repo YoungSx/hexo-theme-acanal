@@ -82,6 +82,7 @@ body {
   word-wrap: break-word;
   word-break: break-all;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 #post h1, #post h2, #post h3, #post h4, #post h5, #post h6 {
@@ -90,6 +91,11 @@ body {
 
 .post-body p img {
   max-width: 100%;
+}
+
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -138,13 +144,6 @@ aside {
 aside a {
   text-decoration: none;
   color: #4B4B4B;
-}
-
-@media (min-width: 1000px) {
-  .post-body {
-    column-count: 2;
-    column-gap: 2em;
-  }
 }
 
 #bottom-outer {
