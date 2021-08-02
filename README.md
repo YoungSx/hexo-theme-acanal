@@ -14,6 +14,20 @@ Modify `theme` setting in `_config.yml` to `acanal`
 theme: acanal
 ```
 
+## Configuration
+### Post
+```yml
+---
+mathjax: true | false # LaTeX math formula support in MarkDown, default false
+---
+```
+### Page
+```yml
+---
+comments: true | false # default true
+---
+```
+
 ## Update
 
 ``` bash
@@ -26,3 +40,4 @@ git pull
 - [x] Valine
 - [ ] catelog
 - [x] visitor statistics
+- [x] math formula
