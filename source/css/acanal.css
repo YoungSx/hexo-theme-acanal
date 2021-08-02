@@ -47,7 +47,8 @@ body {
 }
 
 #menu-outer, #content-outer, #bottom-outer, #fake-bottom-outer {
-  max-width: 1000px;
+  box-sizing: border-box;
+  max-width: 1220px;
   margin: 0 auto;
   background-color: #FFF;
   border-radius: initial;
@@ -74,7 +75,7 @@ body {
 
 #content-outer {
   min-height: calc(100vh - 198px);
-  padding: 40px;
+  padding: 100px;
   margin: 8px auto;
 }
 

@@ -4,7 +4,7 @@
 	}
 
 	#content-outer {
-		padding: 20px;
+		padding: 100px;
 	}
 
     #menu-inner a {
@@ -29,6 +29,12 @@
 
 	.post-body {
 		font-size: 1em;
+	}
+}
+
+@media (max-width:780px) {
+	#content-outer {
+		padding: 40px;
 	}
 }
 
@@ -79,6 +85,10 @@
 }
 
 @media (min-width:981px) {
+	#content-outer {
+		padding: 40px;
+	}
+	
 	.post-body {
 		column-count: 2;
 		column-gap: 2em;
@@ -98,6 +108,12 @@
 
 	h4, h5, h6, aside h2, aside h3 {
 		font-size: 1.2em
+	}
+}
+
+@media (min-width:1201px) {
+	#content-outer {
+		padding: 100px;
 	}
 }
 
