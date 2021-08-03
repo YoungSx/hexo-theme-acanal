@@ -167,6 +167,10 @@ aside a {
   font-size: 18px;
 }
 
+.recent-post-item-icon-img {
+  margin: 0px 5px;
+}
+
 .recent-post-item a {
   color: #333;
   outline: 0;

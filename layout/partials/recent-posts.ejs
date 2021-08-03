@@ -5,7 +5,10 @@
     <h1>Recent Posts</h1>
     <% page.posts.sort('date', -1).limit(10).each(post => { %>
       <div class="recent-post-item">
-        <a href="<%=url_for(post.path)%>"><%=post.title%></a>
+        <a href="<%=url_for(post.path)%>">
+          <img class="recent-post-item-icon-img" src="images/icons/journal.png"/>
+          <%=post.title%>
+        </a>
         <div class="recent-post-item-time">
           <time datetime="<%=post.date.toJSON()%>">
             <%=date(post.date)%>
