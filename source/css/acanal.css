@@ -162,7 +162,7 @@ aside a {
 .recent-post-item {
   padding-bottom: 1rem;
   padding-top: 1rem;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid #999;;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,sans-serif;
   font-size: 18px;
 }
@@ -182,6 +182,8 @@ aside a {
 }
 
 .recent-post-item-time {
+  color: #999;
+  font-size: 16px;
   text-align: right;
 }
 
