@@ -48,7 +48,11 @@ pageTitle += ' [ ' + config.title + ' ]';
       </div>
       <div class="site-title-area">
         <div class="site-title">
-          我们生来就是孤独，我们生来就是孤单。
+          <%if(config.description){%>
+            <%=config.description%>
+          <%}else{%>
+            我们生来就是孤独，我们生来就是孤单。
+          <%}%>
         </div>
         <div class="site-subtitle">
           Site by <%=config.author%> using
