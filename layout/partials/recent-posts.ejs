@@ -6,7 +6,7 @@
     <% page.posts.sort('date', -1).limit(10).each(post => { %>
       <div class="recent-post-item">
         <a href="<%=url_for(post.path)%>">
-          <img class="recent-post-item-icon-img" src="images/icons/journal.png"/>
+          <img class="recent-post-item-icon-img" src="/images/icons/journal.png"/>
           <%=post.title%>
         </a>
         <div class="recent-post-item-time">
