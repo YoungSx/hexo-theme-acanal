@@ -25,71 +25,72 @@ pageTitle += ' [ ' + config.title + ' ]';
 </head>
 <body>
 
-<div id="menu-outer">
-  <div id="menu-inner">
-    <% Object.keys(theme.menu).forEach(key => { %>
-      <a href="<%=theme.menu[key]%>"><%=key%></a>
-    <% }); %>
-  </div>
-</div>
+<% if (is_post()) { %>
+  <%-partial('partials/toc', {page: page})%>
+<% } %>
 
-<div id="content-outer">
-  <div id="content-inner">
-    <%- body %>
+<div id="main">
+  <div id="menu-outer">
+    <div id="menu-inner">
+      <% Object.keys(theme.menu).forEach(key => { %>
+        <a href="<%=theme.menu[key]%>"><%=key%></a>
+      <% }); %>
+    </div>
   </div>
-</div>
 
-<div id="bottom-outer">
-  <div id="bottom-inner">
-    <div id="footer-info">
-      <div class="post-date-left">
-        <%if(page.date){%>
-          Create: <%=page.date%>
-        <%}%>
-      </div>
-      <div class="site-title-area">
-        <div class="site-title">
-          <%if(config.description){%>
-            <%=config.description%>
-          <%}else{%>
-            我们生来就是孤独，我们生来就是孤单。
+  <div id="content-outer">
+    <div id="content-inner">
+      <%- body %>
+    </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      <div id="footer-info">
+        <div class="post-date-left">
+          <%if(page.date){%>
+            Create: <%=page.date%>
           <%}%>
         </div>
-        <div class="site-subtitle">
-          Site by <%=config.author%> using
-          <a href="http://hexo.io">hexo blog framework</a>
+        <div class="site-title-area">
+          <div class="site-title">
+            <%if(config.description){%>
+              <%=config.description%>
+            <%}else{%>
+              我们生来就是孤独，我们生来就是孤单。
+            <%}%>
+          </div>
+          <div class="site-subtitle">
+            Site by <%=config.author%> using
+            <a href="http://hexo.io">hexo blog framework</a>
+          </div>
+        </div>
+        <div class="post-date-right">
+          <%if(page.updated){%>
+            Update: <%=page.updated%>
+          <%}%>
         </div>
       </div>
-      <div class="post-date-right">
-        <%if(page.updated){%>
-          Update: <%=page.updated%>
+      <% if (is_post() || (is_page() && page.comments == true)) { %>
+        <%- partial('partials/valine') %>
+        <% if (theme.valine.visitor) { %>
+          <span id="<%- url_for(page.path) %>" class="leancloud-visitors view" data-flag-title="<%page.title%>">
+            <em class="post-meta-item-text">阅读量 </em>
+            <i class="leancloud-visitors-count">不知道 &gt;_&lt;</i>
+          </span>
         <%}%>
-      </div>
-    </div>
-    <% if (is_post() || (is_page() && page.comments == true)) { %>
-      <%- partial('partials/valine') %>
-      <% if (theme.valine.visitor) { %>
-        <span id="<%- url_for(page.path) %>" class="leancloud-visitors view" data-flag-title="<%page.title%>">
-          <em class="post-meta-item-text">阅读量 </em>
-          <i class="leancloud-visitors-count">不知道 &gt;_&lt;</i>
-        </span>
       <%}%>
-    <%}%>
-    <!-- 不蒜子网站访问量统计 -->
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+      <!-- 不蒜子网站访问量统计 -->
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    </div>
   </div>
 </div>
-
 <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
   <!-- scripts list from theme config.yml -->
   <% theme.scripts.forEach(url => { %>
     <script src="<%=url%>"></script>
   <% }); %>
-<% } %>
-
-<% if (is_post()) { %>
-  <%-partial('partials/toc', {page: page})%>
 <% } %>
 
 </body>

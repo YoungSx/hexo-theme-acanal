@@ -1,6 +1,8 @@
 body {
-  margin: 0 50px;
+  margin: 0px 0px;
   background-color: #E6E6E6;
+  display: flex;
+  flex-direction: row;
 }
 
 @keyframes fade-in {
@@ -48,6 +50,10 @@ body {
   }
 }
 
+#main {
+  flex: auto;
+}
+
 #menu-outer {
   padding: 10px 40px 40px 40px;
   animation: float-up;
@@ -89,17 +95,22 @@ body {
 }
 
 #post-toc {
+  width: 300px;
+  display: none;
+  padding: 10px;
+}
+
+#post-toc #post-toc-inner {
   position: fixed;
   left: 0px;
   top: 0px;
   bottom: 0px;
   width: 300px;
   padding: 10px;
-  background-color: #FFF;
-  display: none;
-  box-shadow: rgb(69 77 93 / 30%) 0rem 0rem .1rem;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #FFF;
+  box-shadow: rgb(69 77 93 / 30%) 0rem 0rem .1rem;
   animation: float-right;
   animation-duration: 1.5s;
   -webkit-animation: float-right 1.5s;
