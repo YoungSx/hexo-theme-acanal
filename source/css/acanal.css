@@ -33,6 +33,21 @@ body {
   }
 }
 
+@keyframes float-right {
+  0% {
+    opacity: 0;
+    margin-left: -50px;
+  }
+  40% {
+    opacity: 0;
+    margin-left: -40px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
 #menu-outer {
   padding: 10px 40px 40px 40px;
   animation: float-up;
@@ -70,6 +85,52 @@ body {
 }
 
 #menu-inner a:hover {
+  background-color: #F0F0F0;
+}
+
+#post-toc {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 300px;
+  padding: 10px;
+  background-color: #FFF;
+  display: none;
+  box-shadow: rgb(69 77 93 / 30%) 0rem 0rem .1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  animation: float-right;
+  animation-duration: 1.5s;
+  -webkit-animation: float-right 1.5s;
+}
+
+.post-toc-title {
+  font-size: 18px;
+  border-bottom: 1px solid #000;
+  user-select: none;
+}
+
+#post-toc ol {
+  padding-left: 10px;
+}
+
+#post-toc ol li {
+  list-style-type: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#post-toc ol li a {
+  display: block;
+  padding: 3px 10px;
+  margin: 1px;
+  border-radius: 3px;
+  transition: background-color ease 0.8s;
+}
+
+#post-toc ol li a:hover {
   background-color: #F0F0F0;
 }
 

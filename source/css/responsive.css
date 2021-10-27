@@ -142,3 +142,9 @@
 		font-size: 1.3em
 	}
 }
+
+@media (min-width:1900px) {
+	#post-toc {
+		display: block;
+	}
+}

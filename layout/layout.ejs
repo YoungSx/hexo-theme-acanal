@@ -88,5 +88,9 @@ pageTitle += ' [ ' + config.title + ' ]';
   <% }); %>
 <% } %>
 
+<% if (is_post()) { %>
+  <%-partial('partials/toc', {page: page})%>
+<% } %>
+
 </body>
 </html>
