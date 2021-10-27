@@ -38,6 +38,6 @@ git pull
 ## TODO
 
 - [x] Valine
-- [ ] catelog
+- [x] catelog
 - [x] visitor statistics
 - [x] math formula
