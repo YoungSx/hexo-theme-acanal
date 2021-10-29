@@ -93,9 +93,9 @@ body {
 }
 
 #post-toc {
-  width: 300px;
+  flex-shrink: 0;
+  width: 320px;
   display: none;
-  padding: 10px;
 }
 
 #post-toc #post-toc-inner {

@@ -1,5 +1,16 @@
+
+@media (max-width:1600px) {
+	#post-toc {
+		width: 220px;
+	}
+
+	#post-toc #post-toc-inner {
+		width: 200px;
+	}
+}
+
 @media (max-width:980px) {
-	body {
+	#main {
 		margin: 0 20px;
 	}
 
@@ -39,7 +50,7 @@
 }
 
 @media (max-width:580px) {
-	body {
+	#main {
 		margin: 0 10px;
 	}
 
@@ -86,16 +97,20 @@
 
 @media (min-width:981px) {
 	body {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#main {
 		margin: 0 40px;
+	}
+
+	#post-toc {
+		display: block;
 	}
 
 	#content-outer {
 		padding: 40px;
-	}
-	
-	.post-body {
-		column-count: 2;
-		column-gap: 2em;
 	}
 
 	h1 {
@@ -148,12 +163,8 @@
 }
 
 @media (min-width:1600px) {
-	body {
-		display: flex;
-		flex-direction: row;
-	}
-
-	#post-toc {
-		display: block;
+	.post-body {
+		column-count: 2;
+		column-gap: 2em;
 	}
 }
