@@ -231,6 +231,53 @@ aside a {
   border-bottom: 1px solid #000;
 }
 
+.profile {
+  display: flex;
+  height: 80px;
+  padding: 0px 0px 32px 0px;
+  margin: 0px 0px 32px 0px;
+  border-bottom: 3px double #000;
+}
+
+.profile-avatar>img {
+  border-radius: 50%;
+}
+
+.profile-content {
+  margin: 0px 0px 0px 20px;
+}
+
+.profile-title {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 3px 0 12px 0;
+  word-wrap: break-word;
+}
+
+.profile-subtitle {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 1px 0;
+}
+
+.recent-post-head {
+  font-size: 18px;
+  line-height: 42px;
+  background-color: #F0F0F0;
+  padding: 0px 20px;
+  display: flex;
+}
+
+.recent-post-head-title {
+  flex: 1;
+  text-align: left;
+}
+
+.recent-post-head-date {
+  flex: 1;
+  text-align: right;
+}
+
 .recent-post-item {
   padding-bottom: 1rem;
   padding-top: 1rem;

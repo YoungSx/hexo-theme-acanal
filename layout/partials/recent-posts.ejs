@@ -1,8 +1,21 @@
 
+<div class="profile">
+  <div class="profile-avatar">
+    <img src="<%=config.avatar%>" alt="">
+  </div>
+  <div class="profile-content">
+    <div class="profile-title"><%=config.title%></div>
+    <div class="profile-subtitle"><%=config.subtitle%></div>
+  </div>
+</div>
 <% if (page.posts.length > 0) { %>
   <div id="recent-posts">
-    <%-partial('partials/header')%>
-    <h1>Recent Posts</h1>
+    <!-- <%-partial('partials/header')%> -->
+    <!-- <h1>Recent Posts</h1> -->
+    <div class="recent-post-head">
+      <div class="recent-post-head-title">Title</div>
+      <div class="recent-post-head-date">Date</div>
+    </div>
     <% page.posts.sort('date', -1).limit(10).each(post => { %>
       <div class="recent-post-item">
         <a href="<%=url_for(post.path)%>">
