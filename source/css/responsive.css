@@ -148,6 +148,11 @@
 }
 
 @media (min-width:1600px) {
+	body {
+		display: flex;
+		flex-direction: row;
+	}
+
 	#post-toc {
 		display: block;
 	}
