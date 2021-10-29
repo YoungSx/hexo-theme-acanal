@@ -85,6 +85,10 @@
 }
 
 @media (min-width:981px) {
+	body {
+		margin: 0 40px;
+	}
+
 	#content-outer {
 		padding: 40px;
 	}
