@@ -1,7 +1,7 @@
 
 <% if (theme.valine.enable) { %>
     <div class="vcomments" id="<%- theme.valine.el %>"></div>
-    <%- js('https://lib.baomitu.com/valine/latest/Valine.min.js') %>
+    <%- js('https://unpkg.com/valine@latest/dist/Valine.min.js') %>
     <script>
         new Valine({
             el: '#vcomments',
