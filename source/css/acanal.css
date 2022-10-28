@@ -6,10 +6,6 @@ body {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    margin-top: 50px;
-  }
-  40% {
-    opacity: 0;
     margin-top: 40px;
   }
   100% {
@@ -21,11 +17,7 @@ body {
 @keyframes float-up {
   0% {
     opacity: 0;
-    padding-top: 50px;
-  }
-  40% {
-    opacity: 0;
-    padding-top: 40px;
+    padding-top: 80px;
   }
   100% {
     opacity: 1;
@@ -40,7 +32,7 @@ body {
   }
   40% {
     opacity: 0;
-    margin-left: -40px;
+    margin-left: -50px;
   }
   100% {
     opacity: 1;
@@ -54,15 +46,13 @@ body {
 
 #menu-outer {
   padding: 10px 40px 40px 40px;
-  animation: float-up;
-  animation-duration: 1.5s;
-  -webkit-animation: float-up 1.5s;
+  animation: float-up 0.8s ease-out 1 normal;
+  -webkit-animation: float-up 0.8s ease-out 1 normal;
 }
 
 #content-outer, #bottom-outer, #fake-bottom-outer {
-  animation: fade-in;
-  animation-duration: 1.5s;
-  -webkit-animation:fade-in 1.5s;
+  animation: fade-in 0.8s ease-out 1 normal;
+  -webkit-animation:fade-in 0.8s ease-out 1 normal;
 }
 
 #menu-outer, #content-outer, #bottom-outer, #fake-bottom-outer {
@@ -109,9 +99,8 @@ body {
   overflow-y: auto;
   background-color: #FFF;
   box-shadow: rgb(69 77 93 / 30%) 0rem 0rem .1rem;
-  animation: float-right;
-  animation-duration: 1.5s;
-  -webkit-animation: float-right 1.5s;
+  animation: float-right 1.5s ease-out;
+  -webkit-animation: float-right 1.5s ease-out;
 }
 
 .post-toc-title {
